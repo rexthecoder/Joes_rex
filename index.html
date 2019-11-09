@@ -15,7 +15,8 @@
     <form id="survey-form">
       <input type="text" id="name" name="name" />
       <input type="email" id="email" name="email" required />
-      <input type="number" id="number">
+      <input type="number" id="number" required placeholder="Enter Number" 
+       oninvalid="this.setCustomValidity('Enter number Here')" oninput="this.setCustomValidity('')" /> 
     </form>
   </body>
 </html>
