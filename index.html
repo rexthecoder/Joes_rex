@@ -13,10 +13,26 @@
     <p>Software developer with quantum brains</p>
 
     <form id="survey-form">
-      <input type="text" id="name" name="name" />
-      <input type="email" id="email" name="email" required />
-      <input type="number" id="number" required placeholder="Enter Number" 
-       oninvalid="this.setCustomValidity('Enter number Here')" oninput="this.setCustomValidity('')" /> 
+      <input type="text" id="name" placeholder="name" />
+      <input
+        type="email"
+        id="email"
+        placeholder="email"
+        required
+        oninvalid="this.setCustomValidity('Enter number Here')"
+        oninput="this.setCustomValidity('')"
+      />
+      <input
+        type="number"
+        id="number"
+        required
+        placeholder="Enter Number"
+        oninvalid="this.setCustomValidity('Enter number Here')"
+        oninput="this.setCustomValidity('')"
+        min="0"
+        max="5"
+        step="5"
+      />
     </form>
   </body>
 </html>
