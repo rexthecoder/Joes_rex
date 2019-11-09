@@ -13,7 +13,9 @@
     <p>Software developer with quantum brains</p>
 
     <form id="survey-form">
+      <label id="name-label">Name: </label>
       <input type="text" id="name" placeholder="name" />
+      <label id="email-label">Email :</label>
       <input
         type="email"
         id="email"
@@ -22,11 +24,12 @@
         oninvalid="this.setCustomValidity('Enter number Here')"
         oninput="this.setCustomValidity('')"
       />
-      <input
+      <label id="number-label">Number: </label
+      ><input
         type="number"
         id="number"
         required
-        placeholder="Enter Number"
+        placeholder="gNumber"
         oninvalid="this.setCustomValidity('Enter number Here')"
         oninput="this.setCustomValidity('')"
         min="0"
